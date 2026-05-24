@@ -130,8 +130,14 @@ body {
   width: 100px;
   height: 100px;
   object-fit: cover;
-  border: 3px solid;
-  border-color: var(--text-decoration-color);
+  border: 3px solid var(--text-decoration-color);
+  flex-shrink: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-info__avatar:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px var(--text-decoration-color);
 }
 
 
